@@ -1,0 +1,138 @@
+:root{
+    --header-background: #5a5a5a;
+    --esportes-background: #BCFDE5;
+    --esportes-links: #1f9b6d;
+    --economia-background: #F8FFC9;
+    --economia-links: #b6c550;
+    --entretenimento-background: #FFDBA1;
+    --entretenimento-links: #a77d39;
+    --tecnologia-background: #A9CDFF;
+    --tecnologia-links: #3b649d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: var(--header-background);
+    padding: 16px 0;
+    color: aliceblue;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    height: 180px;
+    width: 300px;
+}
+
+.articles article {
+    width: 25%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    color:aliceblue;
+    padding: 8px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    text-align: justify;
+}
+
+.articles article h3 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section h2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sports {
+    background-color: var(--esportes-background);
+}
+
+#economy {
+    background-color: var(--economia-background);
+}
+
+#entertainment{
+    background-color: var(--entretenimento-background);
+}
+
+#technology{
+    background-color: var(--tecnologia-background);
+}
+
+#sports .articles article a {
+    background-color: var(--esportes-links);
+}
+
+#economy .articles article a {
+    background-color: var(--economia-links);
+}
+
+#entertainment .articles article a{
+    background-color: var(--entretenimento-links);
+}
+
+#technology .articles article a{
+    background-color: var(--tecnologia-links);
+}
