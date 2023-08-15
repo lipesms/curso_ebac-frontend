@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>numeros</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <form>
-        <div>
-            <input type="number" placeholder="Digite um número" id="number1" class="inputs">
-            <input type="number" placeholder="Digite um número" id="number2" class="inputs">
-            <button type="submit" id="button" class="disable"></button>
+    <div>
+        <header>
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form>
+            <input  id="#box"type="text" required placeholder="Adicione uma tarefa">
+            <button type="submit">+</button>
+        </form>
+        <div class="tarefas">
+            <ul>
+            </ul>
         </div>
-        <p>asdasda</p>
-    </form>
-    <script src="./main.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
