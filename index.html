@@ -36,29 +36,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function() {
-
-            let textToType = "Seu próximo passo no mundo da programação começa hoje";
-
-            let typingElement = $('.chamada');
-            let cursorElement = $('.cursor');
-
-            function typeText(index) {
-                if (index <= textToType.length) {
-                typingElement.text(textToType.substring(0, index));
-                setTimeout(function() {
-                    typeText(index + 1);
-                }, 70); 
-                } else {
-                cursorElement.css("display", "inline-block"); 
-                }
-            }
-
-            typeText(0);
-
-        });
-    </script>
+    <script src="./main.js"></script>
 
 </body>
 </html>
