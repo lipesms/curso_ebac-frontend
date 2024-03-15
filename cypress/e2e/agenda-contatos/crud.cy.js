@@ -42,7 +42,8 @@ describe("testes do crud da agenda de contatos", () => {
 
                 const tamanhoNovo = resp.body.data.length
 
-                expect(tamanhoNovo).to.eq(tamanhoAnterior - 1)
+                expect(tamanhoNovo).to.eq(tamanhoAnterior - 1) 
+                
             })
 
 
